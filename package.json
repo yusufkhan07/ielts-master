@@ -1,0 +1,20 @@
+{
+  "name": "ieltsmaster",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IELTS preparation platform with AI-powered feedback",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "type-check": "npm run type-check --workspaces"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
